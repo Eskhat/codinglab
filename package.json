@@ -1,0 +1,45 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "application",
+  "main": "app1.js",
+  "scripts": {
+    "test": "node app1.js",
+    "server": "nodemon app1.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \" npm run server\" \"npm run client\"",
+    "start": "npm run server"
+  },
+  "keywords": [
+    "js",
+    "javascript"
+  ],
+  "author": "asdgh",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.1.0",
+    "nodemon": "^2.0.15",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
+  },
+  "dependencies": {
+    "@googlemaps/react-wrapper": "^1.1.33",
+    "axios": "^0.27.2",
+    "bcrypt": "^5.0.1",
+    "config": "^3.3.7",
+    "express": "^4.17.3",
+    "express-validator": "^6.14.0",
+    "google-map-react": "^2.1.10",
+    "google-maps-react": "^2.0.6",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.1",
+    "multer": "^1.4.4",
+    "node-modules": "^1.0.1",
+    "react-google-map": "^3.1.1",
+    "react-google-maps-loader": "^4.3.0",
+    "react-router-dom": "^6.3.0",
+    "xhr": "^2.6.0",
+    "zhr": "^1.0.0"
+  }
+}
